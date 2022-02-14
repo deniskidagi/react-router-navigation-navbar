@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import '../index.css'
 import Routers from './Routers'
 import NavigationBar from './components/Navigation-bar';
+import { Container } from '@mui/material';
 
 
 export function App() {
@@ -16,7 +17,9 @@ export function App() {
         <meta name='description' content='A React Boilerplate Application'/>
       </Helmet>
       <NavigationBar/>
-      <Routers/>
+      <Container>
+        <Routers/>
+      </Container>
     </BrowserRouter>
   )
 }
